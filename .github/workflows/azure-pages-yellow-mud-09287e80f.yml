@@ -20,7 +20,7 @@ jobs:
           submodules: true
       - name: Build And Deploy
         id: builddeploy
-        uses: seshen-t/basic-deployment@master
+        uses: seshen-t/anotherdeploy@master
         with:
           azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_YELLOW_MUD_09287E80F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
@@ -39,7 +39,7 @@ jobs:
     steps:
       - name: Close Pull Request
         id: closepullrequest
-        uses: seshen-t/basic-deployment@master
+        uses: seshen-t/anotherdeploy@master
         with:
           azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_YELLOW_MUD_09287E80F }}
           action: "close"
