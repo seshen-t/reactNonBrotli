@@ -22,7 +22,7 @@ jobs:
         id: builddeploy
         uses: seshen-t/anotherdeploy@master
         with:
-          azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_POLITE_ROCK_0AF49CA0F }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_POLITE_ROCK_0AF49CA0F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
@@ -41,5 +41,5 @@ jobs:
         id: closepullrequest
         uses: seshen-t/anotherdeploy@master
         with:
-          azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_POLITE_ROCK_0AF49CA0F }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_POLITE_ROCK_0AF49CA0F }}
           action: "close"
